@@ -75,7 +75,7 @@ public class CatalogoController {
     }
 
     @GetMapping("/{id}/disponible")
-    @PreAuthorize("hasRole('ROLE_LIBRARIAN') or hasRole('ROLE_USER')")
+    @PreAuthorize("hasRole('ROLE_LIBRARIAN')")
     @Operation(
         summary = "Verificar disponibilidad de un libro",
         description = "Consulta si un libro específico está disponible para préstamo. " +
